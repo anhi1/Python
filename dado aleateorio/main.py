@@ -1,17 +1,14 @@
 from interfaz import INTERFAZ, INTERFAZ_FINAL
 from dado import Dado
 
-
 print(INTERFAZ)
 
 numero_caras = int(input("De cuantas caras quieres el dado: "))
 dado = Dado(numero_caras)
-tirada = dado.tirada()
+tiradas = []
+terminar = False
 
-print(f"El resultado de tu tienda es {tirada}")
-terminar = input(INTERFAZ_FINAL)
-
-while terminar:
+while terminar is False:
     tirada = dado.tirada()
     tiradas.append(tirada)
     if input(INTERFAZ_FINAL).lower() not in ("si", "yes", "y"):

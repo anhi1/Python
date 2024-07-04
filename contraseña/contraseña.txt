@@ -1,0 +1,3 @@
+# hacer un pequeño script para crear un archivo contraseña.txt
+# que almacene una contraseña creada por el usuario
+y ademas leamos despues en una nueba variable esa contraseña
