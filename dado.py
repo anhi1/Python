@@ -5,4 +5,5 @@ class Dado:
         self.numero_caras = numero_caras
 
     def tirada(self) -> int:
+        valor_tirada = random.randint()
         return random.randint(1, self.numero_caras)
