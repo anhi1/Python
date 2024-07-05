@@ -2,18 +2,18 @@
 
 def romano_a_decimal(romano:str) -> int:
     valores = {"I":1, "V":5, "X":10, "L":50, "C":100, "D":500, "M":1000}
-    decimal = 0
-    prev_value = 0
+    suma_total = 0
+    valor_anterior = 0
 
-    for char in romano:
-        value = valores[char]
-        if value < prev_value:
-            decimal -= value
+    for simbolo in romano:
+        valor_actual = valores[simbolo]
+        if valor_actual > valor_anterior:
+            suma_total += valor_actual - 2 * valor_anterior
         else:
-            decimal += value
-        prev_value = value
-    return decimal 
+            suma_total += valor_actual
+        valor_anterior = valor_actual
+    return suma_total 
 
-romano = input("introduce un nuemro romano: ")
-decimal = romano_a_decimal(romano)
-print(f"el numero decimal es: {decimal}")
+numero_romano = input("introduce un numero romano: ")
+numero_decimal = romano_a_decimal(numero_romano)
+print(f"el numero decimal es: {numero_decimal}")
