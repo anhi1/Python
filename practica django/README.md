@@ -1,17 +1,20 @@
 ![alt text](image.png)
 
-
+# Entorno virtual
 - python -m venv .venv
 
 - .\.venv\Scripts\activate
 
-- pip install -r .\requirements.txt
+- Instalamos los paquetes:  pip install -r .\requirements.txt
 
-
-![alt text](image-1.png)
+# Iniciado Projecto
 
 - django-admin startproject weather_project
--  ![alt text](image-2.png)
--  
+- cd .\weather_project\
+
+# creamos una app dentro de la carpeta ya creada
+- pyhton.exe .\manage.py startapp weather
+  
+
 
 ![alt text](image-3.png)
