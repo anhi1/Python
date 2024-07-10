@@ -1,3 +1,4 @@
 from django.db import models
 
-# Create your models here.
+# aquitenemos logica de base de datos
+#  django incluye una ORM que es una interfaz para traducir clases de python en tablas sql

@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+# es donde vamos a manejas la respuesta de una peticion
